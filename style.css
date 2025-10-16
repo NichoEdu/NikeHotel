@@ -18,8 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-image: url(/assets/images/art.png);
-  background-color: #000000;
+  background-color:#ffff;
   border-bottom: 2px solid #e5e5e5;
   position: sticky;
   top: 0;
