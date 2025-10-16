@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>NikesHotel</title>
+</head>
+<body>
+  <header class="site-header">
+  <div class="logo">
+    <a href="/">NikesHotel</a>
+  </div>
+
+  <div class="mobile-actions">
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+    <a href="/account" class="user-icon">👤</a>
+    <a href="cart.html" class="cart-icon">
+      🛒 <span class="cart-count">0</span>
+      <div class="cart-preview" id="cartPreview"></div>
+    </a>
+  </div>
+<div class="side-menu" id="sideMenu">
+  <nav class="main-nav">
+    <ul>
+      <li><a href="/products">Products</a></li>
+      <li><a href="/deals">Deals</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+  <div class="header-actions">
+    <form class="search-bar">
+      <input type="text" placeholder="Search" />
+      <button type="submit">🔍</button>
+    </form>
+  </div>
+</header>
+  <div class="main">
+  <h1>Desserts</h1>
+<div class="container">
+
+  <div class="product">
+    <img src="/assets/images/image-waffle-desktop.jpg" alt="Waffle">
+    <button class="add-to-cart" id="add" onclick="addToCart('Waffle with Berries', 6.50)">Add to Cart</button>
+    <h2>Waffle with Berries</h2>
+    <p class="description">Waffle</p>
+    <p class="price">6.50</p>
+  </div>
+  <div class="product">
+    <img src="/assets/images/image-cake-desktop.jpg" alt="Cake">
+    <button class="add-to-cart" id="add">Add to Cart</button>
+    <h2>Chocolate Lava Cake</h2>
+    <p class="description">Lava Cake</p>
+    <p class="price">5.00</p>
+  </div>
+  <div class="product">
+    <img src="/assets/images/image-cake-desktop.jpg" alt="cake">
+    <button class="add-to-cart" id="add">Add to Cart</button>
+    <h2>Strawberry Shortcake</h2>
+    <p class="description">Shortcake</p>
+    <p class="price">4.50</p>
+  </div>
+  <div class="product">
+    <img src="/assets/images/image-creme-brulee-desktop.jpg" alt="creme">
+    <button class="add-to-cart" id="add">Add to Cart</button>
+    <h2>Vanilla Bean Crème Brûlée</h2>
+    <p class="description">Crème Brûlée</p>
+    <p class="price">7.00</p>
+  </div>
+  <div class="product">
+    <img src="/assets/images/image-macaron-desktop.jpg" alt="Macaron">
+    <button class="add-to-cart" id="add">Add to Cart</button>
+    <h2>Macaron Mix of Five</h2>
+    <p class="description">Macaron</p>
+    <p class="price">8.00</p>
+  </div>
+  <div class="product">
+    <img src="/assets/images/image-tiramisu-desktop.jpg" alt="Tiramisu">
+    <button class="add-to-cart" id="add">Add to Cart</button>
+    <h2>Classic Tiramisu</h2>
+    <p class="description">Tiramisu</p>
+    <p class="price">5.50</p>
+  </div>
+<div class="product">
+  <img src="/assets/images/image-baklava-desktop.jpg" alt="Baklava">
+  <button class="add-to-cart" id="add"> Add to Cart</button>
+  <h2>Pistachio Baklava</h2>
+  <p class="description">Baklava</p>
+  <p class="price">4.00</p>
+  </div>
+
+  <div class="product">
+    <img src="/assets/images/image-meringue-desktop.jpg" alt="Meringue">
+    <button class="add-to-cart" id="add">Add to Cart</button>
+    <h2>Lemon Meringue Pie</h2>
+    <p class="description">Pie</p>
+    <p class="price">5.00</p>
+  </div>
+  <div class="product">
+    <img src="/assets/images/image-cake-desktop.jpg" alt="cake">
+    <button class="add-to-cart" id="add">Add to Cart</button>
+    <h2>Red Velvet Cake</h2>
+    <p class="description">Cake</p>
+    <p class="price">4.50</p>
+  </div>
+</div>
+</div>
+<div class="form">
+  <h3>Your Cart (0)</h3>
+  <div class="result" id="results">
+  <p>
+    Your added items will appear here
+  </p>
+  </div>
+<button class="checkout" id="search">Checkout - $0.00</button>
+<button class="clear-cart">Clear Cart</button>
+</div>
+<script src="script.js"></script>
+<div id="toast-container" class="toast-container"></div>
+</body>
+</html>
